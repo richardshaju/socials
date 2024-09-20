@@ -4,9 +4,24 @@
 }
 
 .container {
+  background-image: url(images/image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main{
+    background-color: white;
+    height: 600px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .profile {
@@ -16,10 +31,16 @@
   flex-direction: column;
 }
 
+.profile img{
+    width: 110px;
+    border-radius: 100px;
+}
+
+
 .links{
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 15px;
 }
 
 .links a{
@@ -27,4 +48,6 @@
     border: 1px solid;
     font-size: 20px;
     padding : 20px 40px;
+    text-align: center;
+    border-radius: 10px;
 }
