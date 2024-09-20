@@ -11,10 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .main{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.343);
     height: 600px;
     width: 350px;
     padding: 20px;
@@ -22,6 +23,8 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
+    backdrop-filter: blur(5px);
+    
 }
 
 .profile {
@@ -46,8 +49,31 @@
 .links a{
     text-decoration: none;
     border: 1px solid;
-    font-size: 20px;
+    font-size: 15px;
     padding : 20px 40px;
     text-align: center;
     border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.links a:hover{
+    background-color:rgba(180, 180, 180, 0.178);
+    scale: 1.02;
+}
+
+
+
+
+
+.project-container{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.box img{
+    width: 350px;
 }
